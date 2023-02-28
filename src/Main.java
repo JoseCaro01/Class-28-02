@@ -2,6 +2,7 @@ import abstracts.Person;
 import abstracts.Profesor;
 import classes.AndroidPlayer;
 import classes.IOSPlayer;
+import exercise_interfaces.PaymentList;
 import interfaces.Playable;
 
 import java.time.LocalDate;
@@ -39,6 +40,11 @@ public class Main {
         if (persons[0] instanceof Profesor) {
 
         }
+
+        //Exercise Interfaces
+
+        PaymentList paymentList = new PaymentList(null);
+        System.out.println(paymentList.getLastTransaction());
 
     }
 }
